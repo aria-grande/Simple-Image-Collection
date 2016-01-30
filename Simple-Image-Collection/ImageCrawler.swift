@@ -10,17 +10,22 @@ import Kanna
 
 class ImageCrawler: NSObject {
 
-    private let url = "http://www.gettyimagesgallery.com/collections/archive/slim-aarons.aspx"
-    private var data: [Image] = [Image(name: "Muzi", src: "http://1.bp.blogspot.com/-cs8VQjbzOtc/VdRyLab050I/AAAAAAAARrY/_ntZGVLMFis/s1600/emot_063_x3.png"),
-        Image(name: "Tube", src: "https://worldwalkermagazine.files.wordpress.com/2015/03/46ace1a0ee22b68ef269c0b49b8ecf7a_1400130634-76.png?w=676"),
-        Image(name: "Apeach", src: "http://sehoonyolo.com/sehoonyolo/Automotive/Kakao%20talk%20air%20freshener/apea.jpg"),
-        Image(name: "Tube", src: "https://www.90daykorean.com/wp-content/uploads/2015/04/Tube.png"),
-        Image(name: "Con", src: "http://2.bp.blogspot.com/-njc-638DOWI/VD97iAMiV6I/AAAAAAAAoeI/kYVaaPbPsIs/s1600/kakao%2Bfriend%2Btube%2Bemo.jpg"),
-        Image(name: "Jay-G", src: "http://girlandboything.com/wp-content/uploads/2014/10/KakaoTalk-Personality-GBT-1.jpg")]
-    
+    private let host = "http://www.gettyimagesgallery.com/"
+    private let uri  = "collections/archive/slim-aarons.aspx"
+    private var data:[Image] = []
 
     func crawl() -> ImageCrawler {
-
+        
+        let url = host + uri
+        let doc = Kanna.HTML(url: NSURL(string: url)!, encoding: NSUTF8StringEncoding)!
+        
+        for imgWrapper in doc.css(".gallery-item-group") {
+            let imgSrc = host + imgWrapper.css("img")[0]["src"]!
+            let caption = imgWrapper.css(".gallery-item-caption a").text!
+            
+            data.append(Image(name: caption, src: imgSrc))
+        }
+        
         return self
     }
     
