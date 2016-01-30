@@ -13,7 +13,7 @@
 		DEE3B9681C5B87CB005537BE /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DEE3B9661C5B87CB005537BE /* LaunchScreen.storyboard */; };
 		DEE3B9731C5B87CB005537BE /* Simple_Image_CollectionTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = DEE3B9721C5B87CB005537BE /* Simple_Image_CollectionTests.swift */; };
 		DEE3B98F1C5B936F005537BE /* Image.swift in Sources */ = {isa = PBXBuildFile; fileRef = DEE3B98E1C5B936F005537BE /* Image.swift */; };
-		DEE3B9911C5B96C2005537BE /* ImageData.swift in Sources */ = {isa = PBXBuildFile; fileRef = DEE3B9901C5B96C2005537BE /* ImageData.swift */; };
+		DEE3B9911C5B96C2005537BE /* ImageCrawler.swift in Sources */ = {isa = PBXBuildFile; fileRef = DEE3B9901C5B96C2005537BE /* ImageCrawler.swift */; };
 		DEE3B9931C5BA404005537BE /* ImageCollectionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DEE3B9921C5BA404005537BE /* ImageCollectionViewController.swift */; };
 		DEE3B9951C5BA6F2005537BE /* ImageCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = DEE3B9941C5BA6F2005537BE /* ImageCollectionViewCell.swift */; };
 /* End PBXBuildFile section */
@@ -47,7 +47,7 @@
 		DEE3B9741C5B87CB005537BE /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		DEE3B9791C5B87CB005537BE /* Simple-Image-CollectionUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Simple-Image-CollectionUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		DEE3B98E1C5B936F005537BE /* Image.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Image.swift; sourceTree = "<group>"; };
-		DEE3B9901C5B96C2005537BE /* ImageData.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ImageData.swift; sourceTree = "<group>"; };
+		DEE3B9901C5B96C2005537BE /* ImageCrawler.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ImageCrawler.swift; sourceTree = "<group>"; };
 		DEE3B9921C5BA404005537BE /* ImageCollectionViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = ImageCollectionViewController.swift; path = ../ImageCollectionViewController.swift; sourceTree = "<group>"; };
 		DEE3B9941C5BA6F2005537BE /* ImageCollectionViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ImageCollectionViewCell.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -102,7 +102,7 @@
 				DEE3B9611C5B87CB005537BE /* Main.storyboard */,
 				DEE3B9921C5BA404005537BE /* ImageCollectionViewController.swift */,
 				DEE3B9941C5BA6F2005537BE /* ImageCollectionViewCell.swift */,
-				DEE3B9901C5B96C2005537BE /* ImageData.swift */,
+				DEE3B9901C5B96C2005537BE /* ImageCrawler.swift */,
 				DEE3B98E1C5B936F005537BE /* Image.swift */,
 				DEE3B98B1C5B8FF9005537BE /* Supporting Files */,
 			);
@@ -267,7 +267,7 @@
 				DEE3B9951C5BA6F2005537BE /* ImageCollectionViewCell.swift in Sources */,
 				DEE3B98F1C5B936F005537BE /* Image.swift in Sources */,
 				DEE3B95E1C5B87CB005537BE /* AppDelegate.swift in Sources */,
-				DEE3B9911C5B96C2005537BE /* ImageData.swift in Sources */,
+				DEE3B9911C5B96C2005537BE /* ImageCrawler.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -491,6 +491,7 @@
 				DEE3B9841C5B87CB005537BE /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		DEE3B9851C5B87CB005537BE /* Build configuration list for PBXNativeTarget "Simple-Image-CollectionTests" */ = {
 			isa = XCConfigurationList;
@@ -499,6 +500,7 @@
 				DEE3B9871C5B87CB005537BE /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		DEE3B9881C5B87CB005537BE /* Build configuration list for PBXNativeTarget "Simple-Image-CollectionUITests" */ = {
 			isa = XCConfigurationList;
@@ -507,6 +509,7 @@
 				DEE3B98A1C5B87CB005537BE /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
