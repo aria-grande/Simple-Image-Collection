@@ -6,7 +6,7 @@
 //  Copyright © 2016 Aree Oh. All rights reserved.
 //
 
-import UIKit
+import Kanna
 
 class ImageCrawler: NSObject {
 
