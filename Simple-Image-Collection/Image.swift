@@ -10,6 +10,8 @@ import UIKit
 
 class Image: NSObject {
 
+    private let DEFAULT_TITLE = "No Title"
+    
     private var name: String
     private var src: String
     
@@ -19,7 +21,7 @@ class Image: NSObject {
     }
     
     func getName() -> String {
-        return self.name
+        return self.name.isEmpty ? DEFAULT_TITLE : self.name
     }
     
     func getSrc() -> String {

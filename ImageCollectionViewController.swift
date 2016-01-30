@@ -12,9 +12,13 @@ private let reuseIdentifier = "Cell"
 
 class ImageCollectionViewController: UICollectionViewController {
 
-    // MARK: - variables
+    // MARK: - variables and struct
     var images = ImageCrawler().crawl().get()
-
+    
+    struct Storyboard {
+        static let cellReuseIdentifier = "image"
+    }
+    
     // MARK: - life cycle
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -30,30 +34,27 @@ class ImageCollectionViewController: UICollectionViewController {
     
     // MARK: UICollectionViewDataSource
     override func numberOfSectionsInCollectionView(collectionView: UICollectionView) -> Int {
-        // #warning Incomplete implementation, return the number of sections
         return 1
     }
 
-
     override func collectionView(collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
-        // #warning Incomplete implementation, return the number of items
         return images.count
     }
 
-    struct Storyboard {
-        static let cellReuseIdentifier = "image"
-    }
-    
     override func collectionView(collectionView: UICollectionView, cellForItemAtIndexPath indexPath: NSIndexPath) -> UICollectionViewCell {
         let cell = collectionView.dequeueReusableCellWithReuseIdentifier(Storyboard.cellReuseIdentifier, forIndexPath: indexPath) as! ImageCollectionViewCell
     
-        // Configure the cell
         let image = images[indexPath.row]
-        let url = NSURL(string:image.getSrc())!
-        let data = NSData(contentsOfURL: url)!
+        let url   = NSURL(string:image.getSrc())!
+        let data  = NSData(contentsOfURL: url)!
         
-        cell.imageView.image = UIImage(data: data)
-        cell.caption.text = image.getName()
+        let cellImgView      = cell.imageView
+        let cellImgViewLayer = cellImgView.layer
+
+        cellImgView.image            = UIImage(data: data)
+        cellImgViewLayer.borderColor = UIColor.whiteColor().CGColor
+        cellImgViewLayer.borderWidth = 1
+        cell.caption.text            = image.getName()
         
         return cell
     }

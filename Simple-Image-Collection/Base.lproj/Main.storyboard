@@ -13,25 +13,26 @@
                     <collectionView key="view" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" dataMode="prototypes" id="Lvv-GY-Ub0">
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                         <collectionViewFlowLayout key="collectionViewLayout" minimumLineSpacing="10" minimumInteritemSpacing="10" id="8FO-uj-0Tt">
-                            <size key="itemSize" width="185" height="189"/>
+                            <size key="itemSize" width="200" height="200"/>
                             <size key="headerReferenceSize" width="0.0" height="0.0"/>
                             <size key="footerReferenceSize" width="0.0" height="0.0"/>
                             <inset key="sectionInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
                         </collectionViewFlowLayout>
                         <cells>
                             <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="image" id="3Na-2d-aeu" customClass="ImageCollectionViewCell" customModule="Simple_Image_Collection" customModuleProvider="target">
-                                <rect key="frame" x="0.0" y="64" width="185" height="189"/>
+                                <rect key="frame" x="0.0" y="64" width="200" height="200"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
-                                    <rect key="frame" x="0.0" y="0.0" width="185" height="189"/>
+                                    <rect key="frame" x="0.0" y="0.0" width="200" height="200"/>
                                     <autoresizingMask key="autoresizingMask"/>
                                     <subviews>
                                         <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="37x-qn-OVL">
-                                            <rect key="frame" x="0.0" y="18" width="185" height="133"/>
+                                            <rect key="frame" x="19" y="45" width="162" height="110"/>
                                         </imageView>
                                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="4Ux-7y-Xya">
-                                            <rect key="frame" x="0.0" y="160" width="185" height="29"/>
+                                            <rect key="frame" x="0.0" y="163" width="200" height="29"/>
                                             <constraints>
                                                 <constraint firstAttribute="height" constant="29" id="UYp-lz-Uvb"/>
                                             </constraints>
@@ -43,21 +44,28 @@
                                     <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
                                 </view>
                                 <constraints>
-                                    <constraint firstItem="37x-qn-OVL" firstAttribute="width" secondItem="3Na-2d-aeu" secondAttribute="width" id="3jy-WO-hKY"/>
+                                    <constraint firstItem="37x-qn-OVL" firstAttribute="width" secondItem="3Na-2d-aeu" secondAttribute="width" constant="-38" id="3jy-WO-hKY"/>
                                     <constraint firstAttribute="trailingMargin" secondItem="4Ux-7y-Xya" secondAttribute="trailing" constant="-8" id="45p-wd-vYT"/>
-                                    <constraint firstAttribute="bottom" secondItem="4Ux-7y-Xya" secondAttribute="bottom" id="C2B-Wa-gmf"/>
+                                    <constraint firstAttribute="bottom" secondItem="4Ux-7y-Xya" secondAttribute="bottom" constant="8" id="C2B-Wa-gmf"/>
+                                    <constraint firstItem="37x-qn-OVL" firstAttribute="centerX" secondItem="3Na-2d-aeu" secondAttribute="centerX" id="CTX-y2-eRv"/>
                                     <constraint firstItem="4Ux-7y-Xya" firstAttribute="centerX" secondItem="37x-qn-OVL" secondAttribute="centerX" id="Y4B-FB-rCo"/>
-                                    <constraint firstItem="4Ux-7y-Xya" firstAttribute="top" secondItem="37x-qn-OVL" secondAttribute="bottom" constant="9" id="caf-UN-se1"/>
+                                    <constraint firstItem="4Ux-7y-Xya" firstAttribute="top" secondItem="37x-qn-OVL" secondAttribute="bottom" constant="8" id="caf-UN-se1"/>
                                     <constraint firstItem="37x-qn-OVL" firstAttribute="top" secondItem="3Na-2d-aeu" secondAttribute="topMargin" constant="10" id="fJv-Xz-bVS"/>
+                                    <constraint firstItem="37x-qn-OVL" firstAttribute="centerY" secondItem="3Na-2d-aeu" secondAttribute="centerY" id="fRw-Je-IjZ"/>
                                     <constraint firstItem="4Ux-7y-Xya" firstAttribute="leading" secondItem="3Na-2d-aeu" secondAttribute="leading" id="iBi-4E-xGl"/>
                                     <constraint firstItem="4Ux-7y-Xya" firstAttribute="width" secondItem="3Na-2d-aeu" secondAttribute="width" id="lwO-D0-McJ"/>
                                     <constraint firstItem="37x-qn-OVL" firstAttribute="top" secondItem="3Na-2d-aeu" secondAttribute="topMargin" constant="15" id="uke-77-ae1"/>
-                                    <constraint firstItem="37x-qn-OVL" firstAttribute="width" secondItem="3Na-2d-aeu" secondAttribute="width" id="vFG-i9-ngr"/>
+                                    <constraint firstItem="37x-qn-OVL" firstAttribute="width" secondItem="3Na-2d-aeu" secondAttribute="width" constant="-38" id="vFG-i9-ngr"/>
+                                    <constraint firstItem="37x-qn-OVL" firstAttribute="top" secondItem="3Na-2d-aeu" secondAttribute="topMargin" constant="37" id="xE0-jx-VpQ"/>
                                 </constraints>
                                 <edgeInsets key="layoutMargins" top="8" left="15" bottom="8" right="8"/>
                                 <variation key="default">
                                     <mask key="constraints">
+                                        <exclude reference="fJv-Xz-bVS"/>
                                         <exclude reference="uke-77-ae1"/>
+                                        <exclude reference="xE0-jx-VpQ"/>
+                                        <exclude reference="45p-wd-vYT"/>
+                                        <exclude reference="iBi-4E-xGl"/>
                                     </mask>
                                 </variation>
                                 <connections>
@@ -71,11 +79,21 @@
                             <outlet property="delegate" destination="Kap-rV-h7Z" id="QWD-NU-XNv"/>
                         </connections>
                     </collectionView>
-                    <navigationItem key="navigationItem" id="qcd-ly-Vqk"/>
+                    <navigationItem key="navigationItem" id="qcd-ly-Vqk">
+                        <nil key="title"/>
+                        <segmentedControl key="titleView" opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="top" segmentControlStyle="bar" selectedSegmentIndex="0" id="Et9-v4-38Y">
+                            <rect key="frame" x="180" y="7" width="240" height="30"/>
+                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <segments>
+                                <segment title="Grid"/>
+                                <segment title="List"/>
+                            </segments>
+                        </segmentedControl>
+                    </navigationItem>
                 </collectionViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="f6R-6w-HzM" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1746" y="169"/>
+            <point key="canvasLocation" x="1747" y="169"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="9Dr-Xr-e2t">
