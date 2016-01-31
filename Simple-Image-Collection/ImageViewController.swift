@@ -11,7 +11,9 @@ import UIKit
 class ImageViewController: UIViewController {
     
     // MARK: - variables and struct
-    var images = [Image]()
+    private var images = [Image]()
+    private let listViewSegue = "ListViewSegue"
+    private let gridViewSegue = "GridViewSegue"
 
     @IBOutlet weak var gridContainerView: UIView!
     @IBOutlet weak var listContainerView: UIView!
@@ -39,11 +41,11 @@ class ImageViewController: UIViewController {
         images = ImageCrawler().crawl().get()
         
         let segId = segue.identifier!
-        if segId == "ListViewSegue" {
+        if segId == listViewSegue {
             let listVC = segue.destinationViewController as! ListViewController
             listVC.loadData(images)
         }
-        else if segId == "GridViewSegue" {
+        else if segId == gridViewSegue {
             let gridVC = segue.destinationViewController as! GridViewController
             gridVC.loadData(images)
         }

@@ -11,10 +11,10 @@ import UIKit
 class GridViewController: UICollectionViewController {
 
     // MARK: - variables and struct
-    @IBOutlet var gridView: UICollectionView!
-    
-    private let gridCellReuseIdentifier = "GridCell"
     private var images:[Image] = []
+    private let gridCellReuseIdentifier = "GridCell"
+    
+    @IBOutlet var gridView: UICollectionView!
     
     
     // MARK: - life cycle
@@ -32,7 +32,7 @@ class GridViewController: UICollectionViewController {
         
         let image = images[indexPath.row]
 
-        cell.gridImageView.image = UIImage(data: image.getImageData())
+        cell.gridImageView.sd_setImageWithURL(NSURL(string:image.getSrc())!, placeholderImage: UIImage(named: image.getName()))
         cell.gridImageTitle.text = image.getName()
         
         return cell

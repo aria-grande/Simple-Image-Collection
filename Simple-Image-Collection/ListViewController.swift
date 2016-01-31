@@ -7,14 +7,15 @@
 //
 
 import UIKit
+import SDWebImage
 
 class ListViewController: UITableViewController {
 
     // MARK: - variables
-    @IBOutlet var listView: UITableView!
+    private var images:[Image] = []
+    private let listCellReuseIdentifier = "ListCell"
     
-    let listCellReuseIdentifier = "ListCell"
-    var images:[Image] = []
+    @IBOutlet var listView: UITableView!
     
 
     func handleRefresh(refreshControl: UIRefreshControl) {
@@ -49,7 +50,8 @@ class ListViewController: UITableViewController {
         
         let image = images[indexPath.row]
 
-        cell.listImageView.image = UIImage(data: image.getImageData())
+//        print("src: \(image.getSrc()), name:\(image.getName())")
+        cell.listImageView.sd_setImageWithURL(NSURL(string:image.getSrc())!, placeholderImage: UIImage(named: image.getName()))
         cell.listImageTitle.text = image.getName()
         
         return cell
