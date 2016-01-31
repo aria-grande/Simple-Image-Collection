@@ -47,10 +47,8 @@ class ListViewController: UITableViewController {
     
     override func tableView(tableView: UITableView, cellForRowAtIndexPath indexPath: NSIndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCellWithIdentifier(listCellReuseIdentifier, forIndexPath: indexPath) as! ListViewCell
-        
         let image = images[indexPath.row]
 
-//        print("src: \(image.getSrc()), name:\(image.getName())")
         cell.listImageView.sd_setImageWithURL(NSURL(string:image.getSrc())!, placeholderImage: UIImage(named: image.getName()))
         cell.listImageTitle.text = image.getName()
         

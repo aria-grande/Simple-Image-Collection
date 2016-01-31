@@ -14,21 +14,15 @@ class Image: NSObject {
     
     private var name: String
     private var src:String
-//    private var imageData: NSData
     
     init(name: String, src:String) {
         self.name = name
         self.src = src
-//        self.imageData = imageData
     }
     
     func getSrc() -> String {
         return self.src
     }
-    
-//    func getImageData() -> NSData {
-//        return self.imageData
-//    }
     
     func getName() -> String {
         return self.name.isEmpty ? DEFAULT_TITLE : self.name
