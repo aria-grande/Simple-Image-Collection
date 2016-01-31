@@ -12,6 +12,7 @@
 		DE2DC3571C5E626F0065CE7E /* app_icon_gallery_87.png in Resources */ = {isa = PBXBuildFile; fileRef = DE2DC3531C5E626F0065CE7E /* app_icon_gallery_87.png */; };
 		DE2DC3581C5E626F0065CE7E /* app_icon_gallery_120.png in Resources */ = {isa = PBXBuildFile; fileRef = DE2DC3541C5E626F0065CE7E /* app_icon_gallery_120.png */; };
 		DE2DC3591C5E626F0065CE7E /* app_icon_gallery_180.png in Resources */ = {isa = PBXBuildFile; fileRef = DE2DC3551C5E626F0065CE7E /* app_icon_gallery_180.png */; };
+		DE2DC35C1C5E6E410065CE7E /* GridViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE2DC35B1C5E6E410065CE7E /* GridViewController.swift */; };
 		DEA122ED1C5E1B6A000762F7 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DEA122EC1C5E1B6A000762F7 /* LaunchScreen.storyboard */; };
 		DED0D3421C5DC2A90097A3C0 /* ImageViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DED0D3411C5DC2A90097A3C0 /* ImageViewController.swift */; };
 		DED0D3441C5DC4500097A3C0 /* ListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DED0D3431C5DC4500097A3C0 /* ListViewController.swift */; };
@@ -22,7 +23,6 @@
 		DEE3B9731C5B87CB005537BE /* Simple_Image_CollectionTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = DEE3B9721C5B87CB005537BE /* Simple_Image_CollectionTests.swift */; };
 		DEE3B98F1C5B936F005537BE /* Image.swift in Sources */ = {isa = PBXBuildFile; fileRef = DEE3B98E1C5B936F005537BE /* Image.swift */; };
 		DEE3B9911C5B96C2005537BE /* ImageCrawler.swift in Sources */ = {isa = PBXBuildFile; fileRef = DEE3B9901C5B96C2005537BE /* ImageCrawler.swift */; };
-		DEE3B9931C5BA404005537BE /* GridViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DEE3B9921C5BA404005537BE /* GridViewController.swift */; };
 		DEE3B9951C5BA6F2005537BE /* GridViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = DEE3B9941C5BA6F2005537BE /* GridViewCell.swift */; };
 /* End PBXBuildFile section */
 
@@ -51,6 +51,7 @@
 		DE2DC3531C5E626F0065CE7E /* app_icon_gallery_87.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = app_icon_gallery_87.png; path = Assets.xcassets/AppIcon.appiconset/app_icon_gallery_87.png; sourceTree = "<group>"; };
 		DE2DC3541C5E626F0065CE7E /* app_icon_gallery_120.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = app_icon_gallery_120.png; path = Assets.xcassets/AppIcon.appiconset/app_icon_gallery_120.png; sourceTree = "<group>"; };
 		DE2DC3551C5E626F0065CE7E /* app_icon_gallery_180.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = app_icon_gallery_180.png; path = Assets.xcassets/AppIcon.appiconset/app_icon_gallery_180.png; sourceTree = "<group>"; };
+		DE2DC35B1C5E6E410065CE7E /* GridViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GridViewController.swift; sourceTree = "<group>"; };
 		DEA122EC1C5E1B6A000762F7 /* LaunchScreen.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = LaunchScreen.storyboard; sourceTree = "<group>"; };
 		DED0D3411C5DC2A90097A3C0 /* ImageViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ImageViewController.swift; sourceTree = "<group>"; };
 		DED0D3431C5DC4500097A3C0 /* ListViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ListViewController.swift; sourceTree = "<group>"; };
@@ -66,7 +67,6 @@
 		DEE3B9791C5B87CB005537BE /* Simple-Image-CollectionUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Simple-Image-CollectionUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		DEE3B98E1C5B936F005537BE /* Image.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Image.swift; sourceTree = "<group>"; };
 		DEE3B9901C5B96C2005537BE /* ImageCrawler.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ImageCrawler.swift; sourceTree = "<group>"; };
-		DEE3B9921C5BA404005537BE /* GridViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = GridViewController.swift; path = ../GridViewController.swift; sourceTree = "<group>"; };
 		DEE3B9941C5BA6F2005537BE /* GridViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GridViewCell.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -160,7 +160,7 @@
 				DEA122EC1C5E1B6A000762F7 /* LaunchScreen.storyboard */,
 				DEE3B9611C5B87CB005537BE /* Main.storyboard */,
 				DED0D3411C5DC2A90097A3C0 /* ImageViewController.swift */,
-				DEE3B9921C5BA404005537BE /* GridViewController.swift */,
+				DE2DC35B1C5E6E410065CE7E /* GridViewController.swift */,
 				DEE3B9941C5BA6F2005537BE /* GridViewCell.swift */,
 				DED0D3431C5DC4500097A3C0 /* ListViewController.swift */,
 				DED0D3451C5DC4730097A3C0 /* ListViewCell.swift */,
@@ -379,7 +379,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				DEE3B9931C5BA404005537BE /* GridViewController.swift in Sources */,
+				DE2DC35C1C5E6E410065CE7E /* GridViewController.swift in Sources */,
 				DEE3B9951C5BA6F2005537BE /* GridViewCell.swift in Sources */,
 				DEE3B98F1C5B936F005537BE /* Image.swift in Sources */,
 				DEE3B95E1C5B87CB005537BE /* AppDelegate.swift in Sources */,
