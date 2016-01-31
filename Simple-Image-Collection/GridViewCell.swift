@@ -8,8 +8,8 @@
 
 import UIKit
 
-class ImageCollectionViewCell: UICollectionViewCell {
+class GridViewCell: UICollectionViewCell {
     
-    @IBOutlet weak var imageView: UIImageView!
-    @IBOutlet weak var caption: UILabel!
+    @IBOutlet var gridImageTitle: UILabel!
+    @IBOutlet var gridImageView: UIImageView!
 }

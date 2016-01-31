@@ -18,7 +18,7 @@ class ImageCrawler: NSObject {
     func crawl() -> ImageCrawler {
         
         let doc = Kanna.HTML(url: NSURL(string: origin + pathname)!, encoding: NSUTF8StringEncoding)!
-        
+        /* TODO - can it be done asynchronously and reduce the load time? */
         for imgWrapper in doc.css(".gallery-item-group") {
             let imgSrc = origin + imgWrapper.css("img")[0]["src"]!
             let caption = imgWrapper.css(".gallery-item-caption a").text!

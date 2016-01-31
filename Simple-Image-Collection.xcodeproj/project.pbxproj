@@ -8,6 +8,9 @@
 
 /* Begin PBXBuildFile section */
 		887AC42CE21FA4544DA47C6E /* Pods_Simple_Image_Collection.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DD80985D6036DC5D3A45B0B5 /* Pods_Simple_Image_Collection.framework */; };
+		DED0D3421C5DC2A90097A3C0 /* ImageViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DED0D3411C5DC2A90097A3C0 /* ImageViewController.swift */; };
+		DED0D3441C5DC4500097A3C0 /* ListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DED0D3431C5DC4500097A3C0 /* ListViewController.swift */; };
+		DED0D3461C5DC4730097A3C0 /* ListViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = DED0D3451C5DC4730097A3C0 /* ListViewCell.swift */; };
 		DEE3B95E1C5B87CB005537BE /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = DEE3B95D1C5B87CB005537BE /* AppDelegate.swift */; };
 		DEE3B9631C5B87CB005537BE /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DEE3B9611C5B87CB005537BE /* Main.storyboard */; };
 		DEE3B9651C5B87CB005537BE /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = DEE3B9641C5B87CB005537BE /* Assets.xcassets */; };
@@ -15,8 +18,8 @@
 		DEE3B9731C5B87CB005537BE /* Simple_Image_CollectionTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = DEE3B9721C5B87CB005537BE /* Simple_Image_CollectionTests.swift */; };
 		DEE3B98F1C5B936F005537BE /* Image.swift in Sources */ = {isa = PBXBuildFile; fileRef = DEE3B98E1C5B936F005537BE /* Image.swift */; };
 		DEE3B9911C5B96C2005537BE /* ImageCrawler.swift in Sources */ = {isa = PBXBuildFile; fileRef = DEE3B9901C5B96C2005537BE /* ImageCrawler.swift */; };
-		DEE3B9931C5BA404005537BE /* ImageCollectionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DEE3B9921C5BA404005537BE /* ImageCollectionViewController.swift */; };
-		DEE3B9951C5BA6F2005537BE /* ImageCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = DEE3B9941C5BA6F2005537BE /* ImageCollectionViewCell.swift */; };
+		DEE3B9931C5BA404005537BE /* GridViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DEE3B9921C5BA404005537BE /* GridViewController.swift */; };
+		DEE3B9951C5BA6F2005537BE /* GridViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = DEE3B9941C5BA6F2005537BE /* GridViewCell.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -40,6 +43,9 @@
 		512BE05642A0323C33576843 /* Pods-Simple-Image-Collection.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Simple-Image-Collection.release.xcconfig"; path = "Pods/Target Support Files/Pods-Simple-Image-Collection/Pods-Simple-Image-Collection.release.xcconfig"; sourceTree = "<group>"; };
 		80D828C1BA181AC9DCD0554C /* Pods-Simple-Image-Collection.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Simple-Image-Collection.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Simple-Image-Collection/Pods-Simple-Image-Collection.debug.xcconfig"; sourceTree = "<group>"; };
 		DD80985D6036DC5D3A45B0B5 /* Pods_Simple_Image_Collection.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Simple_Image_Collection.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		DED0D3411C5DC2A90097A3C0 /* ImageViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ImageViewController.swift; sourceTree = "<group>"; };
+		DED0D3431C5DC4500097A3C0 /* ListViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ListViewController.swift; sourceTree = "<group>"; };
+		DED0D3451C5DC4730097A3C0 /* ListViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ListViewCell.swift; sourceTree = "<group>"; };
 		DEE3B95A1C5B87CB005537BE /* Simple-Image-Collection.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Simple-Image-Collection.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		DEE3B95D1C5B87CB005537BE /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		DEE3B9621C5B87CB005537BE /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
@@ -52,8 +58,8 @@
 		DEE3B9791C5B87CB005537BE /* Simple-Image-CollectionUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Simple-Image-CollectionUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		DEE3B98E1C5B936F005537BE /* Image.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Image.swift; sourceTree = "<group>"; };
 		DEE3B9901C5B96C2005537BE /* ImageCrawler.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ImageCrawler.swift; sourceTree = "<group>"; };
-		DEE3B9921C5BA404005537BE /* ImageCollectionViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = ImageCollectionViewController.swift; path = ../ImageCollectionViewController.swift; sourceTree = "<group>"; };
-		DEE3B9941C5BA6F2005537BE /* ImageCollectionViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ImageCollectionViewCell.swift; sourceTree = "<group>"; };
+		DEE3B9921C5BA404005537BE /* GridViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = GridViewController.swift; path = ../GridViewController.swift; sourceTree = "<group>"; };
+		DEE3B9941C5BA6F2005537BE /* GridViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GridViewCell.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -99,6 +105,15 @@
 			name = Frameworks;
 			sourceTree = "<group>";
 		};
+		DED0D3471C5DC5180097A3C0 /* ResourceManager */ = {
+			isa = PBXGroup;
+			children = (
+				DEE3B9901C5B96C2005537BE /* ImageCrawler.swift */,
+				DEE3B98E1C5B936F005537BE /* Image.swift */,
+			);
+			name = ResourceManager;
+			sourceTree = "<group>";
+		};
 		DEE3B9511C5B87CB005537BE = {
 			isa = PBXGroup;
 			children = (
@@ -124,10 +139,12 @@
 			isa = PBXGroup;
 			children = (
 				DEE3B9611C5B87CB005537BE /* Main.storyboard */,
-				DEE3B9921C5BA404005537BE /* ImageCollectionViewController.swift */,
-				DEE3B9941C5BA6F2005537BE /* ImageCollectionViewCell.swift */,
-				DEE3B9901C5B96C2005537BE /* ImageCrawler.swift */,
-				DEE3B98E1C5B936F005537BE /* Image.swift */,
+				DED0D3411C5DC2A90097A3C0 /* ImageViewController.swift */,
+				DEE3B9921C5BA404005537BE /* GridViewController.swift */,
+				DEE3B9941C5BA6F2005537BE /* GridViewCell.swift */,
+				DED0D3431C5DC4500097A3C0 /* ListViewController.swift */,
+				DED0D3451C5DC4730097A3C0 /* ListViewCell.swift */,
+				DED0D3471C5DC5180097A3C0 /* ResourceManager */,
 				DEE3B98B1C5B8FF9005537BE /* Supporting Files */,
 			);
 			path = "Simple-Image-Collection";
@@ -338,11 +355,14 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				DEE3B9931C5BA404005537BE /* ImageCollectionViewController.swift in Sources */,
-				DEE3B9951C5BA6F2005537BE /* ImageCollectionViewCell.swift in Sources */,
+				DEE3B9931C5BA404005537BE /* GridViewController.swift in Sources */,
+				DEE3B9951C5BA6F2005537BE /* GridViewCell.swift in Sources */,
 				DEE3B98F1C5B936F005537BE /* Image.swift in Sources */,
 				DEE3B95E1C5B87CB005537BE /* AppDelegate.swift in Sources */,
+				DED0D3461C5DC4730097A3C0 /* ListViewCell.swift in Sources */,
+				DED0D3421C5DC2A90097A3C0 /* ImageViewController.swift in Sources */,
 				DEE3B9911C5B96C2005537BE /* ImageCrawler.swift in Sources */,
+				DED0D3441C5DC4500097A3C0 /* ListViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
