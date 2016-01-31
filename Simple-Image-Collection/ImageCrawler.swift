@@ -29,12 +29,6 @@ class ImageCrawler: NSObject {
         return self
     }
     
-    func removeAt(index:Int) {
-        if data.count > index {
-            data.removeObjectAtIndex(index)
-        }
-    }
-    
     func get() -> NSMutableArray {
         return self.data
     }

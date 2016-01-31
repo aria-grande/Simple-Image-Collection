@@ -12,14 +12,15 @@ import SDWebImage
 class ListViewController: UITableViewController {
 
     // MARK: - variables
-    private var images:NSMutableArray = []
+    private var images:NSMutableArray   = []
     private let listCellReuseIdentifier = "ListCell"
     
     @IBOutlet var listView: UITableView!
     
 
     func handleRefresh(refreshControl: UIRefreshControl) {
-        self.listView.reloadData()
+        self.images = ImageCrawler().crawl().get()
+        self.listView?.reloadData()
         refreshControl.endRefreshing()
     }
     

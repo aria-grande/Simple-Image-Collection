@@ -11,7 +11,7 @@ import UIKit
 class GridViewController: UICollectionViewController {
 
     // MARK: - variables and struct
-    private var images:NSMutableArray = []
+    private var images:NSMutableArray   = []
     private let gridCellReuseIdentifier = "GridCell"
     
     @IBOutlet var gridView: UICollectionView!

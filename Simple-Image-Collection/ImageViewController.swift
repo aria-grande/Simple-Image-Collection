@@ -11,10 +11,10 @@ import UIKit
 class ImageViewController: UIViewController {
     
     // MARK: - variables and struct
-    private var images        = ImageCrawler().crawl().get()
     private let listViewSegue = "ListViewSegue"
     private let gridViewSegue = "GridViewSegue"
-
+    
+    private var images = ImageCrawler().crawl().get()
     private var listVC = ListViewController()
     private var gridVC = GridViewController()
     
