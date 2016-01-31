@@ -8,6 +8,10 @@
 
 /* Begin PBXBuildFile section */
 		887AC42CE21FA4544DA47C6E /* Pods_Simple_Image_Collection.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DD80985D6036DC5D3A45B0B5 /* Pods_Simple_Image_Collection.framework */; };
+		DE2DC3561C5E626F0065CE7E /* app_icon_gallery_58.png in Resources */ = {isa = PBXBuildFile; fileRef = DE2DC3521C5E626F0065CE7E /* app_icon_gallery_58.png */; };
+		DE2DC3571C5E626F0065CE7E /* app_icon_gallery_87.png in Resources */ = {isa = PBXBuildFile; fileRef = DE2DC3531C5E626F0065CE7E /* app_icon_gallery_87.png */; };
+		DE2DC3581C5E626F0065CE7E /* app_icon_gallery_120.png in Resources */ = {isa = PBXBuildFile; fileRef = DE2DC3541C5E626F0065CE7E /* app_icon_gallery_120.png */; };
+		DE2DC3591C5E626F0065CE7E /* app_icon_gallery_180.png in Resources */ = {isa = PBXBuildFile; fileRef = DE2DC3551C5E626F0065CE7E /* app_icon_gallery_180.png */; };
 		DEA122ED1C5E1B6A000762F7 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DEA122EC1C5E1B6A000762F7 /* LaunchScreen.storyboard */; };
 		DED0D3421C5DC2A90097A3C0 /* ImageViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DED0D3411C5DC2A90097A3C0 /* ImageViewController.swift */; };
 		DED0D3441C5DC4500097A3C0 /* ListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DED0D3431C5DC4500097A3C0 /* ListViewController.swift */; };
@@ -43,6 +47,10 @@
 		512BE05642A0323C33576843 /* Pods-Simple-Image-Collection.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Simple-Image-Collection.release.xcconfig"; path = "Pods/Target Support Files/Pods-Simple-Image-Collection/Pods-Simple-Image-Collection.release.xcconfig"; sourceTree = "<group>"; };
 		80D828C1BA181AC9DCD0554C /* Pods-Simple-Image-Collection.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Simple-Image-Collection.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Simple-Image-Collection/Pods-Simple-Image-Collection.debug.xcconfig"; sourceTree = "<group>"; };
 		DD80985D6036DC5D3A45B0B5 /* Pods_Simple_Image_Collection.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Simple_Image_Collection.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		DE2DC3521C5E626F0065CE7E /* app_icon_gallery_58.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = app_icon_gallery_58.png; path = Assets.xcassets/AppIcon.appiconset/app_icon_gallery_58.png; sourceTree = "<group>"; };
+		DE2DC3531C5E626F0065CE7E /* app_icon_gallery_87.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = app_icon_gallery_87.png; path = Assets.xcassets/AppIcon.appiconset/app_icon_gallery_87.png; sourceTree = "<group>"; };
+		DE2DC3541C5E626F0065CE7E /* app_icon_gallery_120.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = app_icon_gallery_120.png; path = Assets.xcassets/AppIcon.appiconset/app_icon_gallery_120.png; sourceTree = "<group>"; };
+		DE2DC3551C5E626F0065CE7E /* app_icon_gallery_180.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = app_icon_gallery_180.png; path = Assets.xcassets/AppIcon.appiconset/app_icon_gallery_180.png; sourceTree = "<group>"; };
 		DEA122EC1C5E1B6A000762F7 /* LaunchScreen.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = LaunchScreen.storyboard; sourceTree = "<group>"; };
 		DED0D3411C5DC2A90097A3C0 /* ImageViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ImageViewController.swift; sourceTree = "<group>"; };
 		DED0D3431C5DC4500097A3C0 /* ListViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ListViewController.swift; sourceTree = "<group>"; };
@@ -105,6 +113,17 @@
 			name = Frameworks;
 			sourceTree = "<group>";
 		};
+		DE2DC35A1C5E62740065CE7E /* icon */ = {
+			isa = PBXGroup;
+			children = (
+				DE2DC3521C5E626F0065CE7E /* app_icon_gallery_58.png */,
+				DE2DC3531C5E626F0065CE7E /* app_icon_gallery_87.png */,
+				DE2DC3541C5E626F0065CE7E /* app_icon_gallery_120.png */,
+				DE2DC3551C5E626F0065CE7E /* app_icon_gallery_180.png */,
+			);
+			name = icon;
+			sourceTree = "<group>";
+		};
 		DED0D3471C5DC5180097A3C0 /* ResourceManager */ = {
 			isa = PBXGroup;
 			children = (
@@ -163,6 +182,7 @@
 		DEE3B98B1C5B8FF9005537BE /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
+				DE2DC35A1C5E62740065CE7E /* icon */,
 				DEE3B95D1C5B87CB005537BE /* AppDelegate.swift */,
 				DEE3B9691C5B87CB005537BE /* Info.plist */,
 				DEE3B9641C5B87CB005537BE /* Assets.xcassets */,
@@ -280,8 +300,12 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				DE2DC3591C5E626F0065CE7E /* app_icon_gallery_180.png in Resources */,
+				DE2DC3571C5E626F0065CE7E /* app_icon_gallery_87.png in Resources */,
+				DE2DC3581C5E626F0065CE7E /* app_icon_gallery_120.png in Resources */,
 				DEE3B9651C5B87CB005537BE /* Assets.xcassets in Resources */,
 				DEA122ED1C5E1B6A000762F7 /* LaunchScreen.storyboard in Resources */,
+				DE2DC3561C5E626F0065CE7E /* app_icon_gallery_58.png in Resources */,
 				DEE3B9631C5B87CB005537BE /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
