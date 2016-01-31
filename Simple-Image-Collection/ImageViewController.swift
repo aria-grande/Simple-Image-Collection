@@ -18,6 +18,8 @@ class ImageViewController: UIViewController {
    
     @IBAction func changeDisplayType(sender: UISegmentedControl) {
         switch sender.selectedSegmentIndex {
+            //TODO: reload data
+            
             // when list type is clicked
             case 0:
                 listContainerView.hidden = false

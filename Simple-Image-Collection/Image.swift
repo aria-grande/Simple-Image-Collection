@@ -13,18 +13,18 @@ class Image: NSObject {
     private let DEFAULT_TITLE = "No Title"
     
     private var name: String
-    private var src: String
+    private var imageData: NSData
     
-    init(name: String, src: String) {
+    init(name: String, imageData:NSData) {
         self.name = name
-        self.src  = src
+        self.imageData = imageData
+    }
+    
+    func getImageData() -> NSData {
+        return self.imageData
     }
     
     func getName() -> String {
         return self.name.isEmpty ? DEFAULT_TITLE : self.name
-    }
-    
-    func getSrc() -> String {
-        return self.src
     }
 }

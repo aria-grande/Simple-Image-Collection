@@ -23,10 +23,19 @@ class ImageCrawler: NSObject {
             let imgSrc = origin + imgWrapper.css("img")[0]["src"]!
             let caption = imgWrapper.css(".gallery-item-caption a").text!
             
-            data.append(Image(name: caption, src: imgSrc))
+            let url   = NSURL(string: imgSrc)!
+            let imgData  = NSData(contentsOfURL: url)!
+            
+            data.append(Image(name: caption, imageData: imgData))
         }
         
         return self
+    }
+    
+    func removeAt(index:Int) {
+        if data.count > index {
+            data.removeAtIndex(index)
+        }
     }
     
     func get() -> [Image] {

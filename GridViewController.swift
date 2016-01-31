@@ -31,16 +31,9 @@ class GridViewController: UICollectionViewController {
         let cell = collectionView.dequeueReusableCellWithReuseIdentifier(gridCellReuseIdentifier, forIndexPath: indexPath) as! GridViewCell
         
         let image = images[indexPath.row]
-        let url   = NSURL(string:image.getSrc())!
-        let data  = NSData(contentsOfURL: url)!
 
-        let cellImgView      = cell.gridImageView
-        let cellImgViewLayer = cellImgView.layer
-
-        cellImgView.image            = UIImage(data: data)
-        cellImgViewLayer.borderColor = UIColor.whiteColor().CGColor
-        cellImgViewLayer.borderWidth = 1
-        cell.gridImageTitle.text     = image.getName()
+        cell.gridImageView.image = UIImage(data: image.getImageData())
+        cell.gridImageTitle.text = image.getName()
         
         return cell
     }
