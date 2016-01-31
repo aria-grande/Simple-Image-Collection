@@ -13,7 +13,7 @@ class ImageCrawler: NSObject {
     private let origin   = "http://www.gettyimagesgallery.com"
     private let pathname = "/collections/archive/slim-aarons.aspx"
     
-    private var data:[Image] = []
+    private var data:NSMutableArray = []
 
     func crawl() -> ImageCrawler {
         
@@ -23,7 +23,7 @@ class ImageCrawler: NSObject {
             let imgSrc = origin + imgWrapper.css("img")[0]["src"]!
             let caption = imgWrapper.css(".gallery-item-caption a").text!
 
-            data.append(Image(name: caption, src: imgSrc))
+            data.addObject(Image(name: caption, src: imgSrc))
         }
         
         return self
@@ -31,11 +31,11 @@ class ImageCrawler: NSObject {
     
     func removeAt(index:Int) {
         if data.count > index {
-            data.removeAtIndex(index)
+            data.removeObjectAtIndex(index)
         }
     }
     
-    func get() -> [Image] {
+    func get() -> NSMutableArray {
         return self.data
     }
     

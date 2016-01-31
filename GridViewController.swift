@@ -11,14 +11,14 @@ import UIKit
 class GridViewController: UICollectionViewController {
 
     // MARK: - variables and struct
-    private var images:[Image] = []
+    private var images:NSMutableArray = []
     private let gridCellReuseIdentifier = "GridCell"
     
     @IBOutlet var gridView: UICollectionView!
     
     
     // MARK: - life cycle
-    func loadData(images:[Image]) {
+    func loadData(images:NSMutableArray) {
         self.images = images
         self.gridView?.reloadData()
     }
@@ -30,7 +30,7 @@ class GridViewController: UICollectionViewController {
     override func collectionView(collectionView: UICollectionView, cellForItemAtIndexPath indexPath: NSIndexPath) -> UICollectionViewCell {
         let cell = collectionView.dequeueReusableCellWithReuseIdentifier(gridCellReuseIdentifier, forIndexPath: indexPath) as! GridViewCell
         
-        let image = images[indexPath.row]
+        let image = images[indexPath.row] as! Image
 
         cell.gridImageView.sd_setImageWithURL(NSURL(string:image.getSrc())!, placeholderImage: UIImage(named: image.getName()))
         cell.gridImageTitle.text = image.getName()

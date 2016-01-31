@@ -12,7 +12,7 @@ import SDWebImage
 class ListViewController: UITableViewController {
 
     // MARK: - variables
-    private var images:[Image] = []
+    private var images:NSMutableArray = []
     private let listCellReuseIdentifier = "ListCell"
     
     @IBOutlet var listView: UITableView!
@@ -23,8 +23,9 @@ class ListViewController: UITableViewController {
         refreshControl.endRefreshing()
     }
     
-    func loadData(images: [Image]) {
+    func loadData(images: NSMutableArray) {
         self.images = images
+        self.listView?.reloadData()
     }
     
     // MARK: - life cycle
@@ -40,14 +41,14 @@ class ListViewController: UITableViewController {
     
     override func tableView(tableView: UITableView, commitEditingStyle editingStyle: UITableViewCellEditingStyle, forRowAtIndexPath indexPath: NSIndexPath) {
         if editingStyle == .Delete {
-            images.removeAtIndex(indexPath.row)
+            images.removeObjectAtIndex(indexPath.row)
             tableView.deleteRowsAtIndexPaths([indexPath], withRowAnimation: .Fade)
         }
     }
     
     override func tableView(tableView: UITableView, cellForRowAtIndexPath indexPath: NSIndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCellWithIdentifier(listCellReuseIdentifier, forIndexPath: indexPath) as! ListViewCell
-        let image = images[indexPath.row]
+        let image = images[indexPath.row] as! Image
 
         cell.listImageView.sd_setImageWithURL(NSURL(string:image.getSrc())!, placeholderImage: UIImage(named: image.getName()))
         cell.listImageTitle.text = image.getName()

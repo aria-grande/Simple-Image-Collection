@@ -14,7 +14,7 @@
                         <viewControllerLayoutGuide type="top" id="0gX-i1-fUj"/>
                         <viewControllerLayoutGuide type="bottom" id="Veb-4X-5Fl"/>
                     </layoutGuides>
-                    <view key="view" contentMode="scaleToFill" id="wFd-wo-UC8">
+                    <view key="view" contentMode="scaleToFill" id="wFd-wo-UC8" customClass="GridView" customModule="Simple_Image_Collection" customModuleProvider="target">
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
@@ -49,8 +49,8 @@
                             <rect key="frame" x="180" y="7" width="240" height="30"/>
                             <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             <segments>
-                                <segment title="List"/>
                                 <segment title="Grid"/>
+                                <segment title="List"/>
                             </segments>
                             <connections>
                                 <action selector="changeDisplayType:" destination="Zxn-Tb-yZb" eventType="valueChanged" id="f6s-zd-OgZ"/>
