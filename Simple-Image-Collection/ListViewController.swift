@@ -19,7 +19,12 @@ class ListViewController: UITableViewController {
     
 
     func handleRefresh(refreshControl: UIRefreshControl) {
-        self.images = ImageCrawler().crawl().get()
+        let newlyCrawledImages = ImageCrawler().crawl().get()
+        images.removeAllObjects()
+        for newImg in newlyCrawledImages {
+            images.addObject(newImg)
+        }
+        
         self.listView?.reloadData()
         refreshControl.endRefreshing()
     }
@@ -50,7 +55,7 @@ class ListViewController: UITableViewController {
     override func tableView(tableView: UITableView, cellForRowAtIndexPath indexPath: NSIndexPath) -> UITableViewCell {
         let cell      = tableView.dequeueReusableCellWithIdentifier(listCellReuseIdentifier, forIndexPath: indexPath) as! ListViewCell
         let image     = images[indexPath.row] as! Image
-        let imageName = image.GetName()
+        let imageName = image.getName()
 
         cell.listImageView.sd_setImageWithURL(NSURL(string: image.getSrc())!, placeholderImage: UIImage(named: imageName))
         cell.listImageTitle.text = imageName
