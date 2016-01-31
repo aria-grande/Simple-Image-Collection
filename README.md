@@ -11,7 +11,7 @@ Application for iPhone. It shows the list or grid of images.
 
 - Provides two modes to show image collections, List and Grid
     - List
-        - provides refresh when pulling down the list from the top
+        - refreshes(crawls and download images again) data by pulling down the list from the top
         - possible to delete image from the list
     
     - Grid
