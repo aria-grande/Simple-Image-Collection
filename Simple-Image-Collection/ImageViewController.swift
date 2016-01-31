@@ -23,7 +23,6 @@ class ImageViewController: UIViewController {
    
     @IBAction func changeDisplayType(sender: UISegmentedControl) {
         switch sender.selectedSegmentIndex {
-            
             case 0:
                 showGridView()
                 gridVC.loadData(images)

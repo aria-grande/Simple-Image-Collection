@@ -48,11 +48,12 @@ class ListViewController: UITableViewController {
     }
     
     override func tableView(tableView: UITableView, cellForRowAtIndexPath indexPath: NSIndexPath) -> UITableViewCell {
-        let cell = tableView.dequeueReusableCellWithIdentifier(listCellReuseIdentifier, forIndexPath: indexPath) as! ListViewCell
-        let image = images[indexPath.row] as! Image
+        let cell      = tableView.dequeueReusableCellWithIdentifier(listCellReuseIdentifier, forIndexPath: indexPath) as! ListViewCell
+        let image     = images[indexPath.row] as! Image
+        let imageName = image.GetName()
 
-        cell.listImageView.sd_setImageWithURL(NSURL(string:image.getSrc())!, placeholderImage: UIImage(named: image.getName()))
-        cell.listImageTitle.text = image.getName()
+        cell.listImageView.sd_setImageWithURL(NSURL(string: image.getSrc())!, placeholderImage: UIImage(named: imageName))
+        cell.listImageTitle.text = imageName
         
         return cell
     }

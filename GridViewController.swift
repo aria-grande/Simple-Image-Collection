@@ -28,12 +28,12 @@ class GridViewController: UICollectionViewController {
     }
 
     override func collectionView(collectionView: UICollectionView, cellForItemAtIndexPath indexPath: NSIndexPath) -> UICollectionViewCell {
-        let cell = collectionView.dequeueReusableCellWithReuseIdentifier(gridCellReuseIdentifier, forIndexPath: indexPath) as! GridViewCell
-        
-        let image = images[indexPath.row] as! Image
+        let cell      = collectionView.dequeueReusableCellWithReuseIdentifier(gridCellReuseIdentifier, forIndexPath: indexPath) as! GridViewCell
+        let image     = images[indexPath.row] as! Image
+        let imageName = image.getName()
 
-        cell.gridImageView.sd_setImageWithURL(NSURL(string:image.getSrc())!, placeholderImage: UIImage(named: image.getName()))
-        cell.gridImageTitle.text = image.getName()
+        cell.gridImageView.sd_setImageWithURL(NSURL(string:image.getSrc())!, placeholderImage: UIImage(named: imageName))
+        cell.gridImageTitle.text = imageName
         
         return cell
     }
