@@ -19,8 +19,10 @@ class ListViewController: UITableViewController {
     
 
     func handleRefresh(refreshControl: UIRefreshControl) {
-        let newlyCrawledImages = ImageCrawler().crawl().get()
+        
         images.removeAllObjects()
+        
+        let newlyCrawledImages = ImageCrawler().crawl().get()
         for newImg in newlyCrawledImages {
             images.addObject(newImg)
         }
